@@ -39,6 +39,38 @@
 Java后端：SpringBoot + Thymeleaf + WebSocket + Spring Security + SpringData-Jpa + MySql
 <br/> 
 
+## API示例
+接口基准地址：http://localhost:8888/api/private/v1/
+<br/> 
+服务端已开启 CORS 跨域支持
+<br/> 
+API V1 认证统一使用 Token 认证
+<br/> 
+需要授权的 API ，必须在请求头中使用 Authorization 字段提供 token 令牌
+<br/> 
+使用 HTTP Status Code 标识状态
+<br/> 
+数据返回格式统一使用 JSON
+<br/> 
+
+### 支持的请求方法
+GET（SELECT）：从服务器取出资源（一项或多项）。
+<br/> 
+POST（CREATE）：在服务器新建一个资源。
+<br/> 
+PUT（UPDATE）：在服务器更新资源（客户端提供改变后的完整资源）。
+<br/> 
+PATCH（UPDATE）：在服务器更新资源（客户端提供改变的属性）。
+<br/> 
+DELETE（DELETE）：从服务器删除资源。
+<br/> 
+HEAD：获取资源的元数据。
+<br/> 
+OPTIONS：获取信息，关于资源的哪些属性是客户端可以改变的。
+<br/> 
+
+***API接口说明待完善***
+
 ## 常见问题
 0、maven下载jar包长时间无反应？
 ```text
